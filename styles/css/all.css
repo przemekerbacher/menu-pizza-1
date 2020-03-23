@@ -10934,4 +10934,190 @@ a.text-dark:hover, a.text-dark:focus {
         flex-basis: 100%;
   }
 }
-/*# sourceMappingURL=menu-card.css.map */
+
+.basket-button {
+  z-index: 4;
+  position: fixed;
+  bottom: 0px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  border-radius: 5px;
+  height: 100px;
+  width: 100px;
+  max-width: 15vw;
+  max-height: 15vw;
+  min-width: 35px;
+  min-height: 35px;
+  font-family: "open sans condensed";
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.basket-button.hidden {
+  display: none;
+}
+
+.basket-button.active {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.basket-button:hover {
+  background-color: #444801;
+}
+
+.order {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  font-size: 1.2rem;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #3f1503;
+  right: -150%;
+  -webkit-box-shadow: -12px 0px 17px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: -12px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  color: #3f1503;
+  z-index: 1;
+  padding: 50px 10px;
+}
+
+.order .order-pay-button {
+  border-radius: 0;
+  background-color: #3f1503;
+  border-style: none;
+  text-transform: uppercase;
+}
+
+.order.active .blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.order .order-header {
+  text-align: center;
+}
+
+.order .order-header h2 {
+  text-transform: uppercase;
+}
+
+.order .order-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.order .order-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.order .order-item .info .name {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.order .order-item .edit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.order .order-item .edit button:nth-child(1) {
+  margin-right: 5px;
+}
+
+.order .order-item .edit button {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  background-color: #444801;
+  border-style: none;
+  color: white;
+}
+
+.order .order-footer .summary-final {
+  font-weight: bold;
+}
+
+.order .product-item-edit button {
+  background-color: #444801;
+  padding: 4px;
+  width: 45px;
+  height: 45px;
+  border-style: none;
+  color: white;
+  font-size: 20px;
+}
+
+.order.active {
+  -webkit-animation: move-from-right 1s both;
+          animation: move-from-right 1s both;
+}
+
+.order.disabled {
+  -webkit-animation: move-out-from-left 1s both;
+          animation: move-out-from-left 1s both;
+}
+
+@-webkit-keyframes move-from-right {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
+}
+
+@keyframes move-from-right {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
+}
+
+@-webkit-keyframes move-out-from-left {
+  from {
+    right: 0%;
+  }
+  to {
+    right: -150%;
+  }
+}
+
+@keyframes move-out-from-left {
+  from {
+    right: 0%;
+  }
+  to {
+    right: -150%;
+  }
+}
+/*# sourceMappingURL=all.css.map */

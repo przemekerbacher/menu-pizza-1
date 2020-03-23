@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/css/all.css" />
+    <title>Menu</title>
+  </head>
+  <body>
+    <div class="wrap modern">
+      <div class="menu-card">
+        <h1>Menu</h1>
+        <div class="menu-category">
+          <h2>Pizza</h2>
+
+          <div class="menu-items">
+            <!--  -->
+            <div class="menu-item">
+              <div class="info">
+                <div class="name"><span class="numer">1. </span>Margherita</div>
+                <div class="price">
+                  <div class="price-from"><span>18.00</span> zł</div>
+                </div>
+              </div>
+              <div class="description">
+                <small>ser, pieczarki</small>
+              </div>
+            </div>
+            <!--  -->
+            <div class="menu-item">
+              <div class="info">
+                <div class="name">
+                  <span class="numer">2. </span>Neapolitana
+                </div>
+                <div class="price">
+                  <div class="price-from"><span>22.00</span> zł</div>
+                </div>
+              </div>
+              <div class="description">
+                <small
+                  >pomidory, filety anchois, mozzarella plus dekoracja z
+                  kaparów</small
+                >
+              </div>
+            </div>
+
+            <div class="alergens">
+              <a href="#">Lista alergenów znajduje się tutaj</a>
+            </div>
+            <div class="menu-separator">
+              <div class="line"></div>
+              <i class="fas fa-heart"></i>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-category">
+          <h2>Napoje</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="basket-button">
+      <i class="fas fa-chevron-right"></i>
+    </div>
+    <div class="order">
+      <div class="container">
+        <div class="blur"></div>
+        <div class="order-header">
+          <h2>Twoje zamówienie</h2>
+          <button class="order-pay-button btn btn-danger">
+            Przejdź do płatności
+          </button>
+        </div>
+        <div class="order-body">
+          <div class="order-item">
+            <div class="info">
+              <div class="name">
+                <p>Margheritta</p>
+              </div>
+              <div class="price">
+                <span>18.00 zł</span>
+              </div>
+            </div>
+            <div class="edit">
+              <button class="order-item-edit">
+                <i class="far fa-edit"></i>
+              </button>
+              <button class="order-item-delete">
+                <i class="fas fa-times-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="order-footer text-right py-1 ">
+          <p class="summary d-block">
+            Razem: <span class="order-value">62,99 zł</span>
+          </p>
+          <p class="summary-final d-block">
+            Razem do zapłaty: <span class="order-value">62,99 zł</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="js/font-awesome-all.js"></script>
+    <script src="js/site.js"></script>
+  </body>
+</html>
