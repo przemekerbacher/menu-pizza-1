@@ -1,0 +1,20 @@
+.wrap.old {
+  color: $font-color;
+  background-image: url(/images/background-light.jpg);
+  font-family: "Open Sans Condensed", sans-serif;
+
+  h1,
+  h2 {
+    color: $separator-color;
+  }
+
+  .menu-separator {
+    svg {
+      color: $separator-color;
+    }
+
+    .line {
+      border-bottom: 1px solid $separator-color;
+    }
+  }
+}

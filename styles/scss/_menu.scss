@@ -1,0 +1,80 @@
+.wrap {
+  z-index: 1;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+
+  &:before {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.menu-card {
+  @extend .container;
+  position: relative;
+  z-index: 3;
+
+  h1,
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .menu-item {
+      flex-basis: 45%;
+      display: flex;
+      height: 100%;
+      border-bottom: $font-color;
+      padding: 10px 20px;
+      cursor: pointer;
+
+      .info {
+        flex-grow: 1;
+
+        .name {
+          text-transform: uppercase;
+        }
+      }
+
+      .price {
+        white-space: nowrap;
+
+        display: flex;
+        .price-from {
+          margin-right: 10px;
+        }
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    .menu-separator {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin: 20px 0;
+
+      .line {
+        flex-grow: 1;
+      }
+
+      svg {
+        margin: 0 5px;
+      }
+    }
+  }
+}
