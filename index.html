@@ -3,100 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/css/all.css" />
+    <!-- <link rel="stylesheet" href="styles/css/all.css" /> -->
+    <link rel="stylesheet" href="styles/css/base.css" />
+    <link rel="stylesheet" href="styles/css/extra.css" />
     <title>Menu</title>
   </head>
   <body>
-    <div class="wrap modern">
-      <div class="menu-card">
-        <h1>Menu</h1>
-        <div class="menu-category">
-          <h2>Pizza</h2>
+    <div class="wrap">
+      <div class="back">
+        <div class="menu-card">
+          <div class="logo">
+            Logo
+          </div>
+          <div class="categories">
+            <!-- Pizza -->
+            <div class="menu-category">
+              <h2>Pizza</h2>
+              <div class="block">
+                <div class="menu-items">
+                  <!--  -->
+                  <div class="menu-item">
+                    <div class="info">
+                      <div class="name">
+                        <span class="numer">1. </span>Margherita
+                      </div>
+                      <div class="price">
+                        <div class="price-from"><span>18.00</span> zł</div>
+                      </div>
+                    </div>
+                    <div class="description">
+                      <small>ser, pieczarki</small>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="menu-item">
+                    <div class="info">
+                      <div class="name">
+                        <span class="numer">2. </span>Neapolitana
+                      </div>
+                      <div class="price">
+                        <div class="price-from"><span>22.00</span> zł</div>
+                      </div>
+                    </div>
 
-          <div class="menu-items">
-            <!--  -->
-            <div class="menu-item">
-              <div class="info">
-                <div class="name"><span class="numer">1. </span>Margherita</div>
-                <div class="price">
-                  <div class="price-from"><span>18.00</span> zł</div>
-                </div>
-              </div>
-              <div class="description">
-                <small>ser, pieczarki</small>
-              </div>
-            </div>
-            <!--  -->
-            <div class="menu-item">
-              <div class="info">
-                <div class="name">
-                  <span class="numer">2. </span>Neapolitana
-                </div>
-                <div class="price">
-                  <div class="price-from"><span>22.00</span> zł</div>
-                </div>
-              </div>
-              <div class="description">
-                <small
-                  >pomidory, filety anchois, mozzarella plus dekoracja z
-                  kaparów</small
-                >
-              </div>
-            </div>
+                    <div class="description">
+                      <small
+                        >pomidory, filety anchois, mozzarella plus dekoracja z
+                        kaparów</small
+                      >
+                    </div>
+                  </div>
 
-            <div class="alergens">
-              <a href="#">Lista alergenów znajduje się tutaj</a>
+                  <div class="more">
+                    <a href="#">Lista alergenów znajduje się tutaj</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="separator"></div>
+            </div>
+            <!-- Napoje -->
+            <div class="menu-category">
+              <h2>Napoje</h2>
+              <div class="menu-items">
+                <!--  -->
+                <div class="menu-item">
+                  <div class="info">
+                    <div class="name">
+                      <span class="numer">1. </span>Margherita
+                    </div>
+                    <div class="price">
+                      <div class="price-from"><span>18.00</span> zł</div>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <small>ser, pieczarki</small>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="menu-item">
+                  <div class="info">
+                    <div class="name">
+                      <span class="numer">2. </span>Neapolitana
+                    </div>
+                    <div class="price">
+                      <div class="price-from"><span>22.00</span> zł</div>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <small
+                      >pomidory, filety anchois, mozzarella plus dekoracja z
+                      kaparów</small
+                    >
+                  </div>
+                </div>
+                <div class="more">
+                  <a href="#">Lista alergenów znajduje się tutaj</a>
+                </div>
+              </div>
+              <div class="separator"></div>
             </div>
           </div>
         </div>
-        <div class="menu-category">
-          <h2>Napoje</h2>
-        </div>
       </div>
     </div>
-
     <div class="basket-button">
       <i class="fas fa-chevron-right"></i>
-    </div>
-    <div class="order">
-      <div class="container">
-        <div class="order-header">
-          <h2>Twoje zamówienie</h2>
-        </div>
-        <div class="order-body">
-          <div class="order-item">
-            <div class="info">
-              <div class="name">
-                <p>Margheritta</p>
-              </div>
-              <div class="price">
-                <span>18.00 zł</span>
-              </div>
-            </div>
-            <div class="edit">
-              <button class="order-item-edit">
-                <i class="far fa-edit"></i>
-              </button>
-              <button class="order-item-delete">
-                <i class="fas fa-times-circle"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="order-footer text-right py-1 ">
-          <p class="summary d-block">
-            Razem: <span class="order-value">18.00 zł</span>
-          </p>
-          <p class="summary-final d-block">
-            Razem do zapłaty: <span class="order-value">18.00 zł</span>
-          </p>
-          <div class="text-center">
-            <button class="order-pay-button btn btn-danger">
-              Potwierdzam swoje zamówienie
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
     <script src="js/font-awesome-all.js"></script>
     <script src="js/site.js"></script>

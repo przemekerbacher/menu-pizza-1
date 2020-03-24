@@ -10924,60 +10924,6 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0 5px;
 }
 
-.wrap.modern {
-  color: #3f1503;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 25px;
-}
-
-.wrap.modern h1,
-.wrap.modern h2 {
-  color: #444801;
-}
-
-.wrap.modern h1 {
-  font-size: 33px;
-}
-
-.wrap.modern h2 {
-  font-size: 28;
-}
-
-.wrap.modern .menu-separator svg {
-  color: #444801;
-}
-
-.wrap.modern .menu-separator .line {
-  border-bottom: 1px solid #444801;
-}
-
-.wrap.modern .price {
-  font-weight: bold;
-}
-
-.wrap.modern .alergens {
-  font-size: 0.9rem;
-}
-
-.wrap.old {
-  color: #3f1503;
-  background-image: url(/images/background-light.jpg);
-  font-family: "Open Sans Condensed", sans-serif;
-}
-
-.wrap.old h1,
-.wrap.old h2 {
-  color: #444801;
-}
-
-.wrap.old .menu-separator svg {
-  color: #444801;
-}
-
-.wrap.old .menu-separator .line {
-  border-bottom: 1px solid #444801;
-}
-
 @media (max-width: 800px) {
   .menu-card {
     width: 100%;

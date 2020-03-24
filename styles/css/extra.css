@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+.wrap {
+  font-family: "Josefin Sans", sans-serif;
+  background-image: url("../../images/background-dark.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  overflow: hidden;
+}
+
+.wrap .back {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wrap .logo {
+  padding-top: 50px;
+  font-size: 3rem;
+}
+
+.wrap .menu-card {
+  z-index: 1;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.wrap .menu-card .name {
+  font-weight: bold;
+}
+
+.wrap .menu-card .price {
+  margin-left: 25px;
+}
+
+.wrap .menu-card .menu-items {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.wrap .menu-category:nth-child(odd)::after {
+  content: "";
+  display: block;
+  width: 50px;
+  border: 2px solid yellow;
+}
+
+.wrap .menu-category:nth-child(even)::after {
+  content: "";
+  display: block;
+  width: 50px;
+  border: 2px solid green;
+}
+
+.wrap .more {
+  display: none;
+}
+
+.images {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  right: 0;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.images img {
+  max-width: 60%;
+}
+
+.basket-button {
+  z-index: 4;
+  position: fixed;
+  bottom: 0px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  border-radius: 5px;
+  height: 100px;
+  width: 100px;
+  max-width: 15vw;
+  max-height: 15vw;
+  min-width: 35px;
+  min-height: 35px;
+  font-family: "open sans condensed";
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.basket-button.hidden {
+  display: none;
+}
+
+.basket-button.active {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.basket-button:hover {
+  background-color: green;
+  opacity: 0.7;
+}
+/*# sourceMappingURL=extra.css.map */

@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  min-height: 100vh;
+}
+
+.menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu-items .menu-item {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.menu-items .menu-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-items .menu-item .name,
+.menu-items .menu-item .price {
+  white-space: nowrap;
+}
+
+.menu-items .more {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .menu-card {
+    width: 100%;
+    padding: 0;
+  }
+  .menu-card .menu-items .menu-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+/*# sourceMappingURL=base.css.map */
