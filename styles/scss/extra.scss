@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+$green: #77aa03;
+$gold: #c87e29;
+
 .wrap {
   font-family: "Josefin Sans", sans-serif;
   background-image: url("../../images/background-dark.jpg");
@@ -37,6 +40,12 @@
       flex-wrap: wrap;
       flex-grow: 1;
     }
+
+    .menu-item {
+      &.hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
   }
 
   .menu-category {
@@ -44,14 +53,14 @@
       content: "";
       display: block;
       width: 50px;
-      border: 2px solid yellow;
+      border: 2px solid $gold;
     }
 
     &:nth-child(even)::after {
       content: "";
       display: block;
       width: 50px;
-      border: 2px solid green;
+      border: 2px solid $green;
     }
   }
   .more {
@@ -109,4 +118,19 @@
 .basket-button:hover {
   background-color: green;
   opacity: 0.7;
+}
+
+.next {
+  font-family: "Josefin Sans", sans-serif;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: white;
+  padding: 10px;
+  color: $gold;
+  font-weight: bold;
+  letter-spacing: 1px;
+  svg {
+    font-size: 0.6rem;
+  }
 }
