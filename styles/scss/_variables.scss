@@ -1,4 +1,6 @@
 $separator-color: #444801;
 $font-color: #3f1503;
-$animation-move-in-out: 1s both;
 $font: "Open Sans Condensed", sans-serif;
+$rotate-time: 0.2s;
+$animation: $rotate-time both linear;
+$animation-delayed: $rotate-time $rotate-time both linear;

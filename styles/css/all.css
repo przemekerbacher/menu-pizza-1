@@ -10773,6 +10773,60 @@ a.text-dark:hover, a.text-dark:focus {
   min-height: 100vh;
 }
 
+.wrap.rotate {
+  -webkit-animation: rotate-active 0.2s both linear;
+          animation: rotate-active 0.2s both linear;
+}
+
+.wrap.rotate-back {
+  -webkit-animation: rotate-disabled 0.2s 0.2s both linear;
+          animation: rotate-disabled 0.2s 0.2s both linear;
+}
+
+@-webkit-keyframes rotate-active {
+  from {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  to {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+}
+
+@keyframes rotate-active {
+  from {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  to {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+}
+
+@-webkit-keyframes rotate-disabled {
+  from {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  to {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+}
+
+@keyframes rotate-disabled {
+  from {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  to {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+}
+
 .wrap:before {
   position: absolute;
   z-index: 2;
@@ -10981,36 +11035,27 @@ a.text-dark:hover, a.text-dark:focus {
 
 .order {
   z-index: 3;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: "Open Sans Condensed", sans-serif;
   color: #3f1503;
-  right: -150%;
-  -webkit-box-shadow: -12px 0px 17px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: -12px 0px 17px 0px rgba(0, 0, 0, 0.75);
-  color: #3f1503;
-  z-index: 1;
   padding: 50px 10px;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
 }
 
 .order .order-pay-button {
   border-radius: 0;
+  padding: 10px 20px;
+  font-size: 1.5rem;
   background-color: #3f1503;
   border-style: none;
   text-transform: uppercase;
-}
-
-.order.active .blur {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: -1;
 }
 
 .order .order-header {
@@ -11053,8 +11098,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .order .order-item .edit button {
-  height: 50px;
-  width: 50px;
+  height: 75px;
+  width: 75px;
   padding: 10px;
   background-color: #444801;
   border-style: none;
@@ -11076,48 +11121,58 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .order.active {
-  -webkit-animation: move-from-right 1s both;
-          animation: move-from-right 1s both;
+  -webkit-animation: rotate 0.2s 0.2s both linear;
+          animation: rotate 0.2s 0.2s both linear;
 }
 
 .order.disabled {
-  -webkit-animation: move-out-from-left 1s both;
-          animation: move-out-from-left 1s both;
+  -webkit-animation: rotate-back 0.2s both linear;
+          animation: rotate-back 0.2s both linear;
 }
 
-@-webkit-keyframes move-from-right {
+@-webkit-keyframes rotate {
   from {
-    right: -100%;
+    display: block;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
   }
   to {
-    right: 0%;
-  }
-}
-
-@keyframes move-from-right {
-  from {
-    right: -100%;
-  }
-  to {
-    right: 0%;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
 }
 
-@-webkit-keyframes move-out-from-left {
+@keyframes rotate {
   from {
-    right: 0%;
+    display: block;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
   }
   to {
-    right: -150%;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
 }
 
-@keyframes move-out-from-left {
+@-webkit-keyframes rotate-back {
   from {
-    right: 0%;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
   to {
-    right: -150%;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+}
+
+@keyframes rotate-back {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
   }
 }
 /*# sourceMappingURL=all.css.map */

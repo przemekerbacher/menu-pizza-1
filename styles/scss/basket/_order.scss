@@ -1,35 +1,25 @@
 .order {
   z-index: 3;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: $font;
   color: $font-color;
+  padding: 50px 10px;
+  transform: rotateY(90deg);
 
   .order-pay-button {
     border-radius: 0;
+    padding: 10px 20px;
+    font-size: 1.5rem;
     background-color: $font-color;
     border-style: none;
     text-transform: uppercase;
   }
-
-  &.active .blur {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    z-index: -1;
-  }
-
-  right: -150%;
-  box-shadow: -12px 0px 17px 0px rgba(0, 0, 0, 0.75);
-  color: $font-color;
-  z-index: 1;
-  padding: 50px 10px;
 
   .order-header {
     text-align: center;
@@ -58,8 +48,8 @@
         margin-right: 5px;
       }
       button {
-        height: 50px;
-        width: 50px;
+        height: 75px;
+        width: 75px;
         padding: 10px;
         background-color: $separator-color;
         border-style: none;
@@ -83,32 +73,33 @@
     color: white;
     font-size: 20px;
   }
-}
 
-.order.active {
-  animation: move-from-right $animation-move-in-out;
-}
-
-.order.disabled {
-  animation: move-out-from-left $animation-move-in-out;
-}
-
-@keyframes move-from-right {
-  from {
-    right: -100%;
+  &.active {
+    animation: rotate $animation-delayed;
   }
 
-  to {
-    right: 0%;
-  }
-}
-
-@keyframes move-out-from-left {
-  from {
-    right: 0%;
+  &.disabled {
+    animation: rotate-back $animation;
   }
 
-  to {
-    right: -150%;
+  @keyframes rotate {
+    from {
+      display: block;
+      transform: rotateY(90deg);
+    }
+
+    to {
+      transform: rotateY(0deg);
+    }
+  }
+
+  @keyframes rotate-back {
+    from {
+      transform: rotateY(0deg);
+    }
+
+    to {
+      transform: rotateY(90deg);
+    }
   }
 }
