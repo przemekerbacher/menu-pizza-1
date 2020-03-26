@@ -1,30 +1,23 @@
-const orderButton = document.querySelector(".basket-button");
-const order = document.querySelector(".order");
-const wrap = document.querySelector(".wrap");
-const menuItems = document.querySelectorAll(".menu-item");
+const extraButton = document.querySelector(".buttons .expand");
+const addToBasketButtons = document.querySelectorAll(".add-to-basket");
 
-if (orderButton)
-  orderButton.addEventListener("click", () => {
-    if (!orderButton.classList.contains("active")) {
-      orderButton.classList.add("active");
-      order.classList.add("active");
-      order.classList.remove("disabled");
-
-      wrap.classList.add("rotate");
-      wrap.classList.remove("rotate-back");
-    } else {
-      orderButton.classList.remove("active");
-      order.classList.remove("active");
-      order.classList.add("disabled");
-
-      wrap.classList.remove("rotate");
-      wrap.classList.add("rotate-back");
-    }
+if (extraButton) {
+  extraButton.addEventListener("click", function() {
+    const extraMenu = document.querySelector(".buttons");
+    extraMenu.classList.toggle("active");
   });
+}
 
-if (menuItems)
-  menuItems.forEach(item => {
-    item.addEventListener("click", () => {
-      console.log("Dodałeś produkt");
+if (addToBasketButtons) {
+  addToBasketButtons.forEach(button => {
+    button.addEventListener("click", function(e) {
+      e.preventDefault();
+      const iconAdd = button.querySelector(".add");
+      const iconOk = button.querySelector(".ok");
+
+      button.classList.toggle("active");
+      if (iconAdd) iconAdd.classList.toggle("hide");
+      if (iconOk) iconOk.classList.toggle("hide");
     });
   });
+}

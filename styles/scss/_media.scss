@@ -1,11 +1,8 @@
 @media (max-width: 800px) {
-  .menu-card {
+  .category {
     width: 100%;
-    padding: 0;
-    .menu-items {
-      .menu-item {
-        flex-basis: 100%;
-      }
-    }
+  }
+  .categories {
+    max-height: none;
   }
 }

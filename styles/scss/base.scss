@@ -1,32 +1,83 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font;
+  font-size: 30px;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
 .wrap {
+  position: relative;
   min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.menu-card {
+  padding: 40px 0;
+  padding-bottom: 60px;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.category {
+  width: 100%;
 }
 
 .menu-items {
   display: flex;
   flex-wrap: wrap;
+}
+.menu-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.info {
+  display: flex;
+}
 
-  .menu-item {
-    width: 45%;
-    margin-bottom: 20px;
+.name,
+.price {
+  white-space: nowrap;
+}
 
-    .info {
-      display: flex;
-    }
+.price {
+  margin-left: 20px;
+}
 
-    .name,
-    .price {
-      white-space: nowrap;
-    }
-  }
+.more {
+  width: 100%;
+}
 
-  .more {
-    width: 100%;
+.next-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  svg {
+    margin-left: 10px;
+    font-size: 0.5rem;
   }
 }
 

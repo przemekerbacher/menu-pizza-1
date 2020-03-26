@@ -1,10 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap&subset=latin-ext");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 30px;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
 .wrap {
+  position: relative;
   min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.menu-card {
+  padding: 40px 0;
+  padding-bottom: 60px;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.category {
+  width: 100%;
 }
 
 .menu-items {
@@ -15,34 +56,58 @@ body {
       flex-wrap: wrap;
 }
 
-.menu-items .menu-item {
-  width: 45%;
+.menu-item {
+  width: 100%;
   margin-bottom: 20px;
 }
 
-.menu-items .menu-item .info {
+.info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.menu-items .menu-item .name,
-.menu-items .menu-item .price {
+.name,
+.price {
   white-space: nowrap;
 }
 
-.menu-items .more {
+.price {
+  margin-left: 20px;
+}
+
+.more {
   width: 100%;
 }
 
+.next-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.next-page svg {
+  margin-left: 10px;
+  font-size: 0.5rem;
+}
+
 @media (max-width: 800px) {
-  .menu-card {
+  .category {
     width: 100%;
-    padding: 0;
   }
-  .menu-card .menu-items .menu-item {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+  .categories {
+    max-height: none;
   }
 }
 /*# sourceMappingURL=base.css.map */

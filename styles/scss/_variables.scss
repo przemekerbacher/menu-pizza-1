@@ -1,6 +1,4 @@
-$separator-color: #444801;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap&subset=latin-ext");
+
 $font-color: #3f1503;
 $font: "Open Sans Condensed", sans-serif;
-$rotate-time: 0.2s;
-$animation: $rotate-time both linear;
-$animation-delayed: $rotate-time $rotate-time both linear;
