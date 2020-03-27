@@ -20,6 +20,7 @@
   background-color: white;
   max-width: 80vw;
   margin: 40px auto;
+  padding: 30px 120px;
 }
 
 .logo {
@@ -146,14 +147,6 @@
 
 .category {
   width: 100%;
-}
-
-.col-1 .category {
-  padding-left: 100px;
-}
-
-.col-2 .category {
-  padding-right: 100px;
 }
 
 .menu-item {
@@ -347,10 +340,9 @@
   .col-2 {
     width: 100%;
   }
-  .col-1 .category,
-  .col-2 .category {
-    padding-left: 10px;
-    padding-right: 10px;
+  .col-1 .menu-card,
+  .col-2 .menu-card {
+    padding: 0 10px;
   }
 }
 /*# sourceMappingURL=extra.css.map */
