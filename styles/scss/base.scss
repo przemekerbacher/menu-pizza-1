@@ -66,12 +66,10 @@ body {
 }
 
 .next-page {
+  color: black;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  justify-content: flex-end;
   padding: 10px 20px;
   cursor: pointer;
 
