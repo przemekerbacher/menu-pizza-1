@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Allura&display=swap");
 
-$font-size: 25px;
+$font-size: 20px;
 * {
   box-sizing: border-box;
 }
@@ -17,32 +17,24 @@ $font-size: 25px;
 .menu-card {
   background-color: rgba(255, 255, 255, 100);
 
-  max-width: 80vw;
+  max-width: 60vw;
   margin: 40px auto;
-  padding: 30px 220px;
+  padding: 30px 10px;
 }
 .logo {
-  max-width: 60%;
-  padding: 0 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  * {
-    width: 40%;
-  }
-  h1 {
-    font-size: 1.2rem;
-    color: #ffad00;
-    font-family: "Allura", cursive;
-    letter-spacing: 1px;
-    transform: rotate(-6deg);
-    margin: 10px;
+  width: 100%;
+  justify-content: center;
+  img {
+    width: 80%;
+    max-width: 200px;
   }
 }
 .categories {
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 .col-1 {
   width: 50%;
@@ -248,13 +240,19 @@ $font-size: 25px;
     font-size: 20px;
   }
 }
-@media (max-width: 950px) {
+@media (max-width: 1320px) {
   .col-1,
   .col-2 {
     width: 100%;
+  }
 
-    .menu-card {
-      padding: 0 10px;
-    }
+  .menu-card {
+    max-width: 80vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .categories {
+    width: 100%;
   }
 }

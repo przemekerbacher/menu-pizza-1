@@ -1,0 +1,36 @@
+.reservation {
+  text-align: center;
+
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  form > div {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .time {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    span {
+      width: 100%;
+    }
+
+    div {
+    }
+
+    & > div {
+      display: flex;
+    }
+  }
+
+  input[type="submit"] {
+    margin-top: 50px;
+  }
+}

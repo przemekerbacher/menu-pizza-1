@@ -1,0 +1,29 @@
+.main-navigation {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      list-style: none;
+      display: flex;
+      text-transform: uppercase;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      // margin-left: auto;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.menu-navigation {
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+
+    li {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+    }
+  }
+
+  .order-online {
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    margin-top: 50px;
+  }
+
+  .download-menu {
+    display: flex;
+    justify-content: center;
+  }
+}

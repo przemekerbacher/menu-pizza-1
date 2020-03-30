@@ -9,7 +9,7 @@
   background-image: url("../../images/background-black.jpg");
   font-family: "Josefin Sans", sans-serif;
   color: black;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .wrap button {
@@ -18,37 +18,24 @@
 
 .menu-card {
   background-color: white;
-  max-width: 80vw;
+  max-width: 60vw;
   margin: 40px auto;
-  padding: 30px 220px;
+  padding: 30px 10px;
 }
 
 .logo {
-  max-width: 60%;
-  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.logo * {
-  width: 40%;
-}
-
-.logo h1 {
-  font-size: 1.2rem;
-  color: #ffad00;
-  font-family: "Allura", cursive;
-  letter-spacing: 1px;
-  -webkit-transform: rotate(-6deg);
-          transform: rotate(-6deg);
-  margin: 10px;
+.logo img {
+  width: 80%;
+  max-width: 200px;
 }
 
 .categories {
@@ -58,7 +45,8 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .col-1 {
@@ -335,14 +323,18 @@
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1320px) {
   .col-1,
   .col-2 {
     width: 100%;
   }
-  .col-1 .menu-card,
-  .col-2 .menu-card {
-    padding: 0 10px;
+  .menu-card {
+    max-width: 80vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .categories {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=extra.css.map */
