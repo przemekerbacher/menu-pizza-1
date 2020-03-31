@@ -349,6 +349,34 @@ template {
   transition: max-height 0.2s ease-out;
 }
 
+.button-collapsible {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    margin-left: 10px !important;
+  }
+  .nav ul.nav-collapsible {
+    position: absolute;
+    display: block !important;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+    -webkit-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
+  }
+  .nav ul.nav-collapsible a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav .button-collapsible {
+    display: block;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

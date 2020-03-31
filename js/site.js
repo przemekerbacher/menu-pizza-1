@@ -23,7 +23,9 @@ if (addToBasketButtons) {
 }
 
 //add collapsible effect
-const collasibleElements = document.querySelectorAll(".collapsible");
+const collasibleElements = document.querySelectorAll(
+  ".collapsible, .button-collapsible"
+);
 
 if (collasibleElements)
   collasibleElements.forEach(element => {
@@ -37,8 +39,10 @@ if (collasibleElements)
       if (content)
         if (content.style.maxHeight) {
           content.style.maxHeight = null;
+          content.classList.remove("active");
         } else {
           content.style.maxHeight = content.scrollHeight + "px";
+          content.classList.add("active");
         }
     });
   });
