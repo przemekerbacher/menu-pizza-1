@@ -10,6 +10,12 @@
   font-family: $font;
 }
 
+button {
+  background-color: rgba(0, 0, 255, 0.1);
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+}
+
 .home {
   @import "main-navigation";
   @import "header";
@@ -37,7 +43,8 @@
     margin: 0 auto;
   }
 
-  section {
+  section,
+  header {
     margin-bottom: 100px;
   }
 
@@ -45,6 +52,7 @@
   header,
   section,
   main,
+  .container,
   footer {
     border: 1px solid #ddd;
   }

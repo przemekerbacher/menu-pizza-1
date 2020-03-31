@@ -11,6 +11,10 @@
     justify-content: space-between;
     width: 100%;
 
+    input {
+      height: 30px;
+    }
+
     & > div:not(.modal) {
       display: flex;
       flex-direction: column;
@@ -38,6 +42,10 @@
     .time {
       flex-direction: column;
       max-width: 50%;
+
+      label {
+        margin-right: 5px;
+      }
     }
 
     .wrapper {
@@ -61,9 +69,7 @@
   }
 
   button#reserve {
-    margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 50px auto;
   }
 
   #hidden-form {
