@@ -1,5 +1,61 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Allura&display=swap");
+.basket {
+  background-color: white;
+  padding: 10px;
+}
+
+.basket h1 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.basket svg {
+  font-size: 10px;
+  margin: 0 5px;
+}
+
+.basket .count,
+.basket .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basket .order-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.basket .order-item .options {
+  margin-left: auto;
+  color: crimson;
+}
+
+.basket .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.basket .total .total-price {
+  margin-left: 5px;
+}
+
+.basket .payment button {
+  width: 100%;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

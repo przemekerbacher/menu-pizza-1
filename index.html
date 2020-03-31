@@ -79,1069 +79,169 @@
       content="images/favicon/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="styles/css/base.css" />
-    <link rel="stylesheet" href="styles/css/extra.css" />
-    <title>Menu</title>
+    <link rel="stylesheet" href="styles/css/home.css" />
+    <title>BEST PIZZA</title>
   </head>
   <body>
-    <div class="wrap">
-      <div class="back">
-        <div class="menu-card">
+    <div class="home">
+      <nav class="main-navigation">
+        <div class="container">
           <div class="logo">
-            <img src="images/logo_2_bez tła.png" alt="logo" />
+            <a href="#">
+              <img src="images/logo_2_bez tła.png" alt="logo" />
+            </a>
           </div>
-          <div class="categories">
-            <div class="col-1">
-              <div class="category">
-                <div class="header">
-                  <h2>Przystawki</h2>
-                </div>
-                <div class="menu-items">
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">1.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Tatar z polędwicy wołowej</p>
-                      </div>
-                      <div class="details">
-                        <small>z klasycznymi dodatkami i pieczywem</small>
-                      </div>
-                    </div>
-                    <div class="price"><span>21.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">zamów online</a></li>
+            <li><a href="#">rezerwacja</a></li>
+            <li><a href="#">zaloguj się</a></li>
+            <li><a href="#">kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <header>
+        <div class="container">
+          <p>
+            Prawdziwe włoskie składniki, tradycyjny piec oraz receptury to
+            prosta i najzdrowsza droga do aromatycznych dań, o głębokim i
+            wyjątkowym smaku.
+          </p>
+          <strong>
+            Zapraszamy, u nas nakarmisz wsyzstkie zmysły
+          </strong>
+        </div>
+      </header>
 
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">2.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Hummus z ciecierzycy</p>
-                      </div>
-                      <div class="details">
-                        <small>ze świeżą papryką, ogórkiem i pieczywem</small>
-                      </div>
-                    </div>
-                    <div class="price"><span>11.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
+      <main>
+        <div class="container">
+          <section class="menu-navigation">
+            <h1 class="collapsible" data-target="#menu">
+              Poznaj nasze menu (klik)
+            </h1>
 
-                  <div class="more">
-                    <a href="#">Lista alergenów znajduje się tutaj</a>
-                  </div>
-                </div>
-              </div>
-              <div class="category">
-                <div class="header">
-                  <h2>Zupy</h2>
-                </div>
-                <div class="menu-items">
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">1.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Zupa tajska</p>
-                      </div>
-                      <div class="details">
-                        <small
-                          >z kurczakiem, glonami wakame, makaronem ryżowym i
-                          chilli</small
-                        >
-                      </div>
-                    </div>
-                    <div class="price"><span>9.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">2.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Krem z pomidorowy-pomarańczowy</p>
-                      </div>
-                      <div class="details">
-                        <small>z mozzarellą i grzankami</small>
-                      </div>
-                    </div>
-                    <div class="price"><span>8.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">3.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Zupa dnia</p>
-                      </div>
-                      <div class="details"><small></small></div>
-                    </div>
-                    <div class="price"><span>5.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="more">
-                    <a href="#">Lista alergenów znajduje się tutaj</a>
-                  </div>
-                </div>
-              </div>
-              <div class="category">
-                <div class="header">
-                  <h2>Pizza</h2>
-                </div>
-                <div class="menu-items">
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">1.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Margherita</p>
-                      </div>
-                      <div class="details">
-                        <small>sos pomidorowy, mozzarella</small>
-                      </div>
-                    </div>
-                    <div class="price"><span>16.90</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">2.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Salame</p>
-                      </div>
-                      <div class="details">
-                        <small>sos pomidorowy, mozzarella, salami</small>
-                      </div>
-                    </div>
-                    <div class="price"><span>18.90</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">3.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Hawai</p>
-                      </div>
-                      <div class="details">
-                        <small
-                          >sos pomidorowy, mozzarella, szynka, ananas</small
-                        >
-                      </div>
-                    </div>
-                    <div class="price"><span>19.90</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">4.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Carbonara</p>
-                      </div>
-                      <div class="details">
-                        <small
-                          >sos śmietanowy, mozzarella, bekon, jajko, czosnek,
-                          natka, parmezan</small
-                        >
-                      </div>
-                    </div>
-                    <div class="price"><span>19.90</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">5.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Vegetariana</p>
-                      </div>
-                      <div class="details">
-                        <small
-                          >sos pomidorowy, mozzarella, cukinia, papryka, cebula
-                          czerwona, oliwki, brokuły</small
-                        >
-                      </div>
-                    </div>
-                    <div class="price"><span>19.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">6.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Spinaci</p>
-                      </div>
-                      <div class="details">
-                        <small
-                          >sos śmietanowy, mozzarella, szpinak, suszone
-                          pomidory, feta, prażony słonecznik</small
-                        >
-                      </div>
-                    </div>
-                    <div class="price"><span>20.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">7.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Farmerska</p>
-                      </div>
-                      <div class="details">
-                        <small
-                          >sos, mozzarella, kurczak, bekon, pieczarki, brokuły,
-                          cebula</small
-                        >
-                      </div>
-                    </div>
-                    <div class="price"><span>20.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">8.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Quattro formaggi</p>
-                      </div>
-                      <div class="details">
-                        <small
-                          >sos, mozzarella, gorgonzola, parmezan,
-                          camembert</small
-                        >
-                      </div>
-                    </div>
-                    <div class="price"><span>21.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">9.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Prosciutto</p>
-                      </div>
-                      <div class="details">
-                        <small>sos pomidorowy, mozzarella, szynka</small>
-                      </div>
-                    </div>
-                    <div class="price"><span>21.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">10.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Capricciosa</p>
-                      </div>
-                      <div class="details">
-                        <small
-                          >sos pomidorowy, mozzarella, szynka, pieczarki</small
-                        >
-                      </div>
-                    </div>
-                    <div class="price"><span>22.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">11.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Tonno</p>
-                      </div>
-                      <div class="details">
-                        <small
-                          >sos pomidorowy, mozzarella, tuńczyk, czarne oliwki,
-                          cebula czerwona</small
-                        >
-                      </div>
-                    </div>
-                    <div class="price"><span>22.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">12.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Rustica</p>
-                      </div>
-                      <div class="details">
-                        <small
-                          >sos pomidorowy, mozzarella, salami, papryka,
-                          cebula</small
-                        >
-                      </div>
-                    </div>
-                    <div class="price"><span>22.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">13.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Pollo</p>
-                      </div>
-                      <div class="details">
-                        <small
-                          >sos, mozzarella, kurczak, pieczarki, papryka,
-                          kukurydza, cebula czerwona</small
-                        >
-                      </div>
-                    </div>
-                    <div class="price"><span>23.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">14.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Chorizo</p>
-                      </div>
-                      <div class="details">
-                        <small
-                          >sos pomidorowy, mozzarella, chorizo, papryka
-                          jalapeno, cebula czerwona</small
-                        >
-                      </div>
-                    </div>
-                    <div class="price"><span>23.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">15.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Mexicana /pikantna/</p>
-                      </div>
-                      <div class="details">
-                        <small
-                          >sos, mozzarella, salami, szynka, papryka, kukurydza,
-                          papryczki jalapenos</small
-                        >
-                      </div>
-                    </div>
-                    <div class="price"><span>24.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">16.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Supreme</p>
-                      </div>
-                      <div class="details">
-                        <small
-                          >ssos, mozzarella, szynka, salami, boczek, kurczak,
-                          cebula czerwona</small
-                        >
-                      </div>
-                    </div>
-                    <div class="price"><span>24.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="more">
-                    <a href="#">Lista alergenów znajduje się tutaj</a>
-                  </div>
-                </div>
-              </div>
+            <nav class="hidden" id="menu">
+              <ul>
+                <li><a href="#">Przystawki</a></li>
+                <li><a href="#">Zupy</a></li>
+                <li><a href="#">Pizza</a></li>
+                <li><a href="#">Dodatki do pizzy</a></li>
+                <li><a href="#">Desery</a></li>
+                <li><a href="#">Menu dla dzieci</a></li>
+                <li><a href="#">Napoje</a></li>
+              </ul>
+            </nav>
+            <div class="order-online">
+              <button>Zamów online</button>
             </div>
-            <div class="col-2">
-              <div class="category">
-                <div class="header">
-                  <h2>Sałaty</h2>
-                </div>
-                <div class="menu-items">
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">1.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Cezar z kurczakiem</p>
-                      </div>
-                      <div class="details"><small></small></div>
-                    </div>
-                    <div class="price"><span>20.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">2.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Z krewetkami i salsą mango</p>
-                      </div>
-                      <div class="details"><small></small></div>
-                    </div>
-                    <div class="price"><span>25.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="more">
-                    <a href="#">Lista alergenów znajduje się tutaj</a>
-                  </div>
-                </div>
-              </div>
-              <div class="category">
-                <div class="header">
-                  <h2>Dodatki</h2>
-                </div>
-                <div class="menu-items">
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">1.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Sos czosnkowy</p>
-                      </div>
-                      <div class="details"><small></small></div>
-                    </div>
-                    <div class="price"><span>4.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">2.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Sos Mexico</p>
-                      </div>
-                      <div class="details"><small></small></div>
-                    </div>
-                    <div class="price"><span>5.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">3.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Sos green good</p>
-                      </div>
-                      <div class="details"><small></small></div>
-                    </div>
-                    <div class="price"><span>5.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">4.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Keczup</p>
-                      </div>
-                      <div class="details"><small></small></div>
-                    </div>
-                    <div class="price"><span>3.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">5.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Majonez</p>
-                      </div>
-                      <div class="details"><small></small></div>
-                    </div>
-                    <div class="price"><span>3.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="more">
-                    <a href="#">Lista alergenów znajduje się tutaj</a>
-                  </div>
-                </div>
-              </div>
-              <div class="category">
-                <div class="header">
-                  <h2>Desery</h2>
-                </div>
-                <div class="menu-items">
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">1.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Suflet czekoladowy</p>
-                      </div>
-                      <div class="details">
-                        <small>z musem malinowym</small>
-                      </div>
-                    </div>
-                    <div class="price"><span>12.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">2.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Beza z serkiem mascarpone</p>
-                      </div>
-                      <div class="details">
-                        <small>i owocami sezonowymi</small>
-                      </div>
-                    </div>
-                    <div class="price"><span>13.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">3.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Sernik oreo</p>
-                      </div>
-                      <div class="details">
-                        <small
-                          >mięso, papryczki jalapeno, bułka wypiekana w
-                          restauracji, sałata, pomidor, ogórek, konfitura z
-                          cebuli, sos</small
-                        >
-                      </div>
-                    </div>
-                    <div class="price"><span>13.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="more">
-                    <a href="#">Lista alergenów znajduje się tutaj</a>
-                  </div>
-                </div>
-              </div>
-              <div class="category">
-                <div class="header">
-                  <h2>Kids menu</h2>
-                </div>
-                <div class="menu-items">
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">1.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Naleśniki z serkiem</p>
-                      </div>
-                      <div class="details">
-                        <small>i sosem czekoladowym</small>
-                      </div>
-                    </div>
-                    <div class="price"><span>12.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">2.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Placki jogurtowe</p>
-                      </div>
-                      <div class="details">
-                        <small>z owoccami i cukrem pudrem</small>
-                      </div>
-                    </div>
-                    <div class="price"><span>12.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">3.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Nugettsy z frytkami</p>
-                      </div>
-                      <div class="details"><small>i ketchupem</small></div>
-                    </div>
-                    <div class="price"><span>12.00</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="more">
-                    <a href="#">Lista alergenów znajduje się tutaj</a>
-                  </div>
-                </div>
-              </div>
-              <div class="category">
-                <div class="header">
-                  <h2>Napoje</h2>
-                </div>
-                <div class="menu-items">
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">1.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Coca-Cola</p>
-                      </div>
-                      <div class="details"><small>0.25 l</small></div>
-                    </div>
-                    <div class="price"><span>8.50</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">2.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Coca-Cola Zero</p>
-                      </div>
-                      <div class="details"><small>0.25 l</small></div>
-                    </div>
-                    <div class="price"><span>8.50</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">3.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Fanta</p>
-                      </div>
-                      <div class="details"><small>0.25 l</small></div>
-                    </div>
-                    <div class="price"><span>8.50</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">4.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Sprite</p>
-                      </div>
-                      <div class="details"><small>0.25 l</small></div>
-                    </div>
-                    <div class="price"><span>8.50</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">5.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Kinley</p>
-                      </div>
-                      <div class="details"><small>0.25 l</small></div>
-                    </div>
-                    <div class="price"><span>8.50</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">6.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Herbata mlożona Fuze</p>
-                      </div>
-                      <div class="details"><small>0.25 l</small></div>
-                    </div>
-                    <div class="price"><span>8.50</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">7.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Sok pomarańczowy</p>
-                      </div>
-                      <div class="details"><small>0.25 l</small></div>
-                    </div>
-                    <div class="price"><span>8.50</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">8.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Sok grejfrutowy</p>
-                      </div>
-                      <div class="details"><small>0.25 l</small></div>
-                    </div>
-                    <div class="price"><span>8.50</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">9.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Sok jabłkowy</p>
-                      </div>
-                      <div class="details"><small>0.25 l</small></div>
-                    </div>
-                    <div class="price"><span>8.50</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">10.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Sok o smaku czarnej porzeczki</p>
-                      </div>
-                      <div class="details"><small>0.25 l</small></div>
-                    </div>
-                    <div class="price"><span>8.50</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="id">
-                      <span class="numer">11.</span>
-                    </div>
-                    <div class="info">
-                      <div class="name">
-                        <p>Sok pomidorowy</p>
-                      </div>
-                      <div class="details"><small>0.25 l</small></div>
-                    </div>
-                    <div class="price"><span>8.50</span></div>
-                    <div class="buy">
-                      <button class="add-to-basket">
-                        <i class="fas fa-plus add"></i>
-                        <i class="fas fa-check ok hide"></i>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="more">
-                    <a href="#">Lista alergenów znajduje się tutaj</a>
-                  </div>
-                </div>
-              </div>
+            <div class="download-menu">
+              <a href="#">Pobierz pdf z menu</a>
             </div>
-          </div>
-          <div class="next-page">
-            Pizza, napoje, piwa <i class="fas fa-chevron-right"></i>
-          </div>
-        </div>
-      </div>
+          </section>
 
-      <!-- <div class="buttons">
-        <button class="expand"><i class="fas fa-hand-point-up"></i></button>
-        <div class="show-menu">
-          <button><i class="fas fa-book-open"></i>Menu</button>
+          <section class="reservation">
+            <h1>
+              Zarezerwuj czas dla siebie i swoich bliskich
+            </h1>
+            <form action="">
+              <div>
+                <label for="date">data</label>
+                <input type="date" name="date" id="date" />
+              </div>
+              <div class="time">
+                <span>godzina</span>
+                <div class="wrapper">
+                  <div>
+                    <label for="time-from">od</label>
+                    <input type="time" name="time-from" id="time-from" />
+                  </div>
+                  <div>
+                    <label for="time-to">do</label>
+                    <input type="time" name="time-to" id="time-to" />
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label for="surname">ilość osób</label>
+                <input type="text" name="surname" id="surname" />
+              </div>
+              <div>
+                <label for="surname">nazwisko</label>
+                <input type="text" name="surname" id="surname" />
+              </div>
+              <div class="next">
+                <button
+                  id="reserve"
+                  class="show-modal"
+                  data-target="#hidden-form"
+                >
+                  Zarezeruj
+                </button>
+              </div>
+              <div class="modal" id="hidden-form">
+                <div class="modal-content">
+                  <div class="additional-info">
+                    <h1>Potrzebujemy jeszcze kilku informacji</h1>
+                    <div>
+                      <label for="phone">Telefon</label>
+                      <input type="text" id="phone" />
+                    </div>
+                    <div>
+                      <label for="email">Email</label>
+                      <input type="email" id="phone" />
+                    </div>
+                    <div>
+                      <label for="comments">Uwagi</label>
+                      <textarea
+                        name="comments"
+                        id="comments"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </div>
+                    <div class="submit">
+                      <input type="submit" value="Zarezerwuj" />
+                    </div>
+                  </div>
+                  <span class="close">&times;</span>
+                </div>
+              </div>
+            </form>
+          </section>
         </div>
-        <div class="show-basket">
-          <button><i class="fas fa-shopping-basket"></i>Koszyk</button>
+      </main>
+      <footer>
+        <div class="container">
+          <section class="contact">
+            <p class="phone">
+              <i class="fas fa-phone"></i><span>94 35 406 40</span>
+            </p>
+            <p class="addresss-1"><span>Głogowa 10</span></p>
+            <p class="addresss-2"><span>78-100 Kołobrzeg</span></p>
+          </section>
+          <section class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2336.1024978605624!2d15.54788431566943!3d54.16054798015776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4700156d2d9533ad%3A0x6d178e88f0d59922!2sS4H%20System%20-%20Producent%20oprogramowania%20dla%20gastronomii%20i%20hoteli!5e0!3m2!1sen!2spl!4v1585313903001!5m2!1sen!2spl"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </section>
+          <section class="rights">
+            <p>&copy; 2020 Zamow.S4HONLINE</p>
+            <p>
+              Strona używa plików cookies - jeżeli ich nie akceptujesz zmień
+              ustawienia przeglądarki. Używanie systemu oznacza akceptację
+              regulaminu
+            </p>
+          </section>
         </div>
-      </div> -->
+      </footer>
     </div>
-    <script src="js/font-awesome-all.js"></script>
     <script src="js/site.js"></script>
   </body>
 </html>

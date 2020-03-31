@@ -1,4 +1,7 @@
 @import "variables";
+@import "collapse";
+@import "modal";
+@import "normalize";
 
 * {
   margin: 0;
@@ -19,6 +22,7 @@
 
   .logo {
     justify-self: flex-start;
+
     img {
       width: 100px;
     }

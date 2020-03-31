@@ -5,32 +5,68 @@
     margin-bottom: 50px;
   }
 
-  form > div {
+  form {
     display: flex;
-    flex-direction: column;
-    max-width: 50%;
-    margin: 0 auto;
-  }
-
-  .time {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
 
-    span {
-      width: 100%;
-    }
-
-    div {
-    }
-
-    & > div {
+    & > div:not(.modal) {
       display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      padding: 0 5px;
+    }
+
+    .additional-info {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+
+      .submit {
+        margin-top: 50px;
+      }
+    }
+
+    .time {
+      flex-direction: column;
+      max-width: 50%;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      div {
+        display: flex;
+        width: 48%;
+
+        input {
+          flex-grow: 1;
+        }
+      }
     }
   }
 
-  input[type="submit"] {
+  .next {
+    width: 100%;
+  }
+
+  button#reserve {
     margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #hidden-form {
+    position: fixed;
   }
 }

@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap&subset=latin-ext");
+.hidden {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

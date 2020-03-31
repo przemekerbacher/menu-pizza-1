@@ -21,3 +21,71 @@ if (addToBasketButtons) {
     });
   });
 }
+
+//add collapsible effect
+const collasibleElements = document.querySelectorAll(".collapsible");
+
+if (collasibleElements)
+  collasibleElements.forEach(element => {
+    element.addEventListener("click", function(e) {
+      const content = document.querySelector(
+        e.currentTarget.getAttribute("data-target")
+      );
+
+      e.currentTarget.classList.toggle("active");
+
+      if (content)
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+  });
+
+const reservation = document.querySelector("#reserve");
+
+if (reservation) {
+  const moreInformation = document.querySelector(".hidden-form");
+  reservation.addEventListener("click", function(e) {
+    e.preventDefault();
+    moreInformation;
+  });
+}
+
+//modal
+const modalButtons = document.querySelectorAll(".show-modal");
+if (modalButtons) {
+  modalButtons.forEach(button => {
+    button.addEventListener("click", function(e) {
+      e.preventDefault();
+      let closeModal;
+      const modal = document.querySelector(
+        e.currentTarget.getAttribute("data-target")
+      );
+
+      console.log(e.currentTarget.getAttribute("data-target"));
+
+      console.log(modal);
+
+      if (modal) {
+        const closeThisModal = () => {
+          modal.style.display = "none";
+        };
+
+        modal.style.display = "block";
+        closeModal = modal.querySelector(".close");
+
+        window.addEventListener("click", function(e) {
+          if (e.target == modal) {
+            modal.style.display = "none";
+          }
+        });
+
+        if (closeModal) {
+          closeModal.addEventListener("click", closeThisModal);
+        }
+      }
+    });
+  });
+}

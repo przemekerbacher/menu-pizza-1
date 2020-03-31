@@ -1,4 +1,6 @@
+@import "normalize";
 @import "variables";
+@import "collapse";
 
 * {
   box-sizing: border-box;
@@ -16,10 +18,10 @@ body {
 
 .wrap {
   position: relative;
+  overflow: hidden;
   min-height: 100vh;
   background-attachment: fixed;
   background-size: cover;
-  overflow: hidden;
 }
 
 .menu-card {
@@ -66,11 +68,11 @@ body {
 }
 
 .next-page {
-  color: black;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 10px 20px;
+  color: black;
   cursor: pointer;
 
   svg {

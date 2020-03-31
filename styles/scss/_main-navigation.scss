@@ -2,14 +2,15 @@
   .container {
     display: flex;
     justify-content: space-between;
+
     ul {
-      list-style: none;
       display: flex;
       text-transform: uppercase;
       flex-wrap: wrap;
       justify-content: center;
+      list-style: none;
       text-align: center;
-      // margin-left: auto;
+
       li {
         display: flex;
         justify-content: center;
@@ -17,11 +18,10 @@
       }
 
       a {
-        width: 100%;
         display: flex;
         align-items: center;
+        width: 100%;
         text-decoration: none;
-        display: block;
         padding: 10px 20px;
       }
     }

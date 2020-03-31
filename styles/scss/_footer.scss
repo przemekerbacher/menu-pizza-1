@@ -1,9 +1,10 @@
 footer {
+  text-align: center;
+
   section {
     margin-bottom: 50px;
   }
 
-  text-align: center;
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -11,14 +12,25 @@ footer {
   }
 
   .contact {
-    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .map {
+    flex-grow: 1;
   }
 
   .rights {
     width: 100%;
+  }
+
+  .map {
+    iframe {
+      min-width: 100%;
+      min-height: 200px;
+    }
   }
 }

@@ -1,69 +1,83 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Allura&display=swap");
+@import "basket";
 
 $font-size: 20px;
+
 * {
   box-sizing: border-box;
 }
+
 .wrap {
   background-image: url("../../images/background-black.jpg");
-  font-family: "Josefin Sans", sans-serif;
   color: black;
+  font-family: "Josefin Sans", sans-serif;
   font-size: $font-size;
+
   button {
     outline: none;
   }
 }
-.menu-card {
-  background-color: rgba(255, 255, 255, 100);
 
+.menu-card {
   max-width: 60vw;
   margin: 40px auto;
   padding: 30px 10px;
+  background-color: rgba(255, 255, 255, 100);
 }
+
 .logo {
   display: flex;
-  width: 100%;
   justify-content: center;
+  width: 100%;
+
   img {
     width: 80%;
     max-width: 200px;
   }
 }
+
 .categories {
   flex-direction: row;
   justify-content: space-around;
   width: 80%;
   margin: 0 auto;
 }
+
 .col-1 {
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
+
   img {
     max-width: 100%;
   }
+
   .image {
     align-self: flex-start;
   }
 }
+
 .col-2 {
   width: 50%;
+
   img {
     max-width: 100%;
   }
+
   .image {
     display: flex;
     justify-content: flex-end;
   }
 }
+
 .image {
   img {
     max-width: 100%;
-    max-width: 100%;
   }
 }
+
 .category {
   h2 {
     font-size: 1.5rem;
@@ -71,10 +85,11 @@ $font-size: 20px;
 
   padding: 0 20px;
 }
+
 .more {
   display: none;
-  display: none;
 }
+
 .name {
   display: inline;
   font-weight: bold;
@@ -84,33 +99,24 @@ $font-size: 20px;
     display: inline;
   }
 }
-.price {
-  margin-left: 25px;
 
+.price {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   align-items: flex-start;
+  flex-wrap: nowrap;
+  margin-left: 25px;
 }
 
 .category {
   width: 100%;
 }
 
-.col-1 {
-  .category {
-  }
-}
-.col-2 {
-  .category {
-  }
-}
-
 .menu-item {
-  width: 100%;
   display: flex;
-  flex-wrap: nowrap;
   align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
   margin-bottom: 10px;
 
   .id {
@@ -124,6 +130,7 @@ $font-size: 20px;
   .buy {
     transform: translateY(-25%);
   }
+
   .buy .active {
     background-color: #b40308;
   }
@@ -135,92 +142,101 @@ $font-size: 20px;
   .buy button {
     justify-self: flex-end;
     margin-left: 10px;
-    border-style: none;
-    color: white;
-    width: 25px;
     height: 25px;
-    background-color: #77aa03;
-    transition: 0.6s;
-    font-size: 10px;
+    width: 25px;
+    border-style: none;
     border-radius: 50%;
+    background-color: #77aa03;
+    color: white;
+    font-size: 10px;
+    transition: 0.6s;
   }
 
   .info {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    flex-grow: 1;
     margin: 0;
     padding: 0;
-    align-self: flex-start;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
   }
 }
 
 .buttons {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: -225px;
   display: flex;
   align-items: center;
-  position: fixed;
-  top: 0;
-  overflow: hidden;
-  background-color: #77aa03;
-  right: -225px;
   height: 75px;
   width: 300px;
+  padding: 0px;
+  background-color: #77aa03;
   border-top-left-radius: 75px;
   border-bottom-left-radius: 75px;
-  padding: 0px;
   transition: right 1s;
-  > div {
+
+  & > div {
     flex-grow: 1;
   }
+
   button {
-    background-color: transparent;
-    border-style: none;
     margin: 0;
     padding: 0;
+    border-style: none;
+    background-color: transparent;
     cursor: pointer;
   }
+
   .show-menu {
     height: 100%;
+
     button {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      width: 100%;
+      height: 100%;
       text-transform: uppercase;
       font-family: "Josefin Sans", sans-serif;
       font-weight: bold;
       text-transform: uppercase;
-      height: 100%;
-      width: 100%;
       text-align: center;
       color: white;
     }
+
     svg {
       margin-bottom: 10px;
       font-size: 1.3rem;
     }
   }
+
   .show-basket {
     height: 100%;
+
     button {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      height: 100%;
+      width: 100%;
       align-items: center;
       text-transform: uppercase;
       font-family: "Josefin Sans", sans-serif;
       font-weight: bold;
       text-transform: uppercase;
-      height: 100%;
-      width: 100%;
       text-align: center;
       color: white;
     }
+
     svg {
       margin-bottom: 10px;
       font-size: 1.3rem;
     }
   }
+
   .expand {
     justify-self: flex-start;
     display: block;
@@ -231,6 +247,7 @@ $font-size: 20px;
     cursor: pointer;
   }
 }
+
 .buttons.active {
   right: 0;
 }
@@ -240,6 +257,7 @@ $font-size: 20px;
     font-size: 20px;
   }
 }
+
 @media (max-width: 1320px) {
   .col-1,
   .col-2 {
