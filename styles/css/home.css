@@ -415,6 +415,18 @@ template {
   display: none;
 }
 
+@media (max-width: 800px) {
+  .home .category {
+    width: 100%;
+  }
+  .home .container {
+    width: 100vw;
+  }
+  .home .categories {
+    max-height: none;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -1,8 +1,15 @@
 @media (max-width: 800px) {
-  .category {
-    width: 100%;
-  }
-  .categories {
-    max-height: none;
+  .home {
+    .category {
+      width: 100%;
+    }
+
+    .container {
+      width: 100vw;
+    }
+
+    .categories {
+      max-height: none;
+    }
   }
 }
