@@ -43,7 +43,8 @@
 
     .time {
       flex-direction: column;
-      max-width: 50%;
+      width: 50%;
+      min-width: 250px;
 
       span {
         margin-bottom: 8px;

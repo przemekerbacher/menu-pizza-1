@@ -11352,7 +11352,8 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 50%;
+  width: 50%;
+  min-width: 250px;
 }
 
 .home .reservation form .time span {
