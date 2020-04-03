@@ -17,6 +17,12 @@ footer {
     align-items: center;
     flex-direction: column;
     flex-grow: 1;
+
+    svg {
+      font-size: 0.6rem;
+      margin-right: 5px;
+      vertical-align: 1px;
+    }
   }
 
   .map {

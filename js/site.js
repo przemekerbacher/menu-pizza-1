@@ -63,31 +63,35 @@ if (modalButtons) {
   modalButtons.forEach(button => {
     button.addEventListener("click", function(e) {
       e.preventDefault();
-      let closeModal;
+
       const modal = document.querySelector(
         e.currentTarget.getAttribute("data-target")
       );
 
-      console.log(e.currentTarget.getAttribute("data-target"));
-
-      console.log(modal);
-
       if (modal) {
+        const closeModalButton = modal.querySelector(".close");
+
         const closeThisModal = () => {
           modal.style.display = "none";
+          document.body.style.overflow = "auto";
         };
 
-        modal.style.display = "block";
-        closeModal = modal.querySelector(".close");
+        const showThisModal = () => {
+          modal.style.display = "block";
+          document.body.style.overflow = "hidden";
+        };
 
+        //handle show modal
+        showThisModal();
+
+        //Handle close modal
         window.addEventListener("click", function(e) {
           if (e.target == modal) {
-            modal.style.display = "none";
+            closeThisModal();
           }
         });
-
-        if (closeModal) {
-          closeModal.addEventListener("click", closeThisModal);
+        if (closeModalButton) {
+          closeModalButton.addEventListener("click", closeThisModal);
         }
       }
     });

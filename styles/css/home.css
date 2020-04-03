@@ -48,8 +48,8 @@
 
 .modal .modal-content {
   position: relative;
-  width: 80%;
-  margin: 15% auto;
+  max-width: 50vw;
+  margin: 50px auto;
   padding: 20px;
   background-color: #fefefe;
   border: 1px solid #888;
@@ -661,6 +661,12 @@ button {
           flex-grow: 1;
 }
 
+.home footer .contact svg {
+  font-size: 0.6rem;
+  margin-right: 5px;
+  vertical-align: 1px;
+}
+
 .home footer .map {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -761,14 +767,5 @@ button {
 .home section,
 .home header {
   margin-bottom: 100px;
-}
-
-.home nav,
-.home header,
-.home section,
-.home main,
-.home .container,
-.home footer {
-  border: 1px solid #ddd;
 }
 /*# sourceMappingURL=home.css.map */
