@@ -72,14 +72,14 @@
   outline: none;
 }
 
-.menu-card {
+.wrap .menu-card {
   max-width: 60vw;
   margin: 40px auto;
   padding: 30px 10px;
   background-color: white;
 }
 
-.logo {
+.wrap .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,12 +89,12 @@
   width: 100%;
 }
 
-.logo img {
+.wrap .logo img {
   width: 80%;
   max-width: 200px;
 }
 
-.categories {
+.wrap .categories {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -105,7 +105,7 @@
   margin: 0 auto;
 }
 
-.col-1 {
+.wrap .col-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,24 +119,24 @@
   width: 50%;
 }
 
-.col-1 img {
+.wrap .col-1 img {
   max-width: 100%;
 }
 
-.col-1 .image {
+.wrap .col-1 .image {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
 
-.col-2 {
+.wrap .col-2 {
   width: 50%;
 }
 
-.col-2 img {
+.wrap .col-2 img {
   max-width: 100%;
 }
 
-.col-2 .image {
+.wrap .col-2 .image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,33 +145,33 @@
           justify-content: flex-end;
 }
 
-.image img {
+.wrap .image img {
   max-width: 100%;
 }
 
-.category {
+.wrap .category {
   padding: 0 20px;
 }
 
-.category h2 {
+.wrap .category h2 {
   font-size: 1.5rem;
 }
 
-.more {
+.wrap .more {
   display: none;
 }
 
-.name {
+.wrap .name {
   display: inline;
   font-weight: bold;
   white-space: unset;
 }
 
-.name p {
+.wrap .name p {
   display: inline;
 }
 
-.price {
+.wrap .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,11 +187,11 @@
   margin-left: 25px;
 }
 
-.category {
+.wrap .category {
   width: 100%;
 }
 
-.menu-item {
+.wrap .menu-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,28 +204,28 @@
   margin-bottom: 10px;
 }
 
-.menu-item .id {
+.wrap .menu-item .id {
   margin-right: 10px;
 }
 
-.menu-item .price {
+.wrap .menu-item .price {
   justify-self: flex-end;
 }
 
-.menu-item .buy {
+.wrap .menu-item .buy {
   -webkit-transform: translateY(-25%);
           transform: translateY(-25%);
 }
 
-.menu-item .buy .active {
+.wrap .menu-item .buy .active {
   background-color: #b40308;
 }
 
-.menu-item .buy .hide {
+.wrap .menu-item .buy .hide {
   display: none;
 }
 
-.menu-item .buy button {
+.wrap .menu-item .buy button {
   justify-self: flex-end;
   margin-left: 10px;
   height: 25px;
@@ -239,7 +239,7 @@
   transition: 0.6s;
 }
 
-.menu-item .info {
+.wrap .menu-item .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,7 +256,7 @@
   padding: 0;
 }
 
-.buttons {
+.wrap .buttons {
   position: fixed;
   overflow: hidden;
   top: 0;
@@ -277,13 +277,13 @@
   transition: right 1s;
 }
 
-.buttons > div {
+.wrap .buttons > div {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.buttons button {
+.wrap .buttons button {
   margin: 0;
   padding: 0;
   border-style: none;
@@ -291,11 +291,11 @@
   cursor: pointer;
 }
 
-.buttons .show-menu {
+.wrap .buttons .show-menu {
   height: 100%;
 }
 
-.buttons .show-menu button {
+.wrap .buttons .show-menu button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,16 +319,16 @@
   color: white;
 }
 
-.buttons .show-menu svg {
+.wrap .buttons .show-menu svg {
   margin-bottom: 10px;
   font-size: 1.3rem;
 }
 
-.buttons .show-basket {
+.wrap .buttons .show-basket {
   height: 100%;
 }
 
-.buttons .show-basket button {
+.wrap .buttons .show-basket button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,12 +352,12 @@
   color: white;
 }
 
-.buttons .show-basket svg {
+.wrap .buttons .show-basket svg {
   margin-bottom: 10px;
   font-size: 1.3rem;
 }
 
-.buttons .expand {
+.wrap .buttons .expand {
   justify-self: flex-start;
   display: block;
   height: 75px;
@@ -367,27 +367,27 @@
   cursor: pointer;
 }
 
-.buttons.active {
+.wrap .buttons.active {
   right: 0;
 }
 
 @media (max-width: 1050px) {
-  .wrap {
+  .wrap .wrap {
     font-size: 20px;
   }
 }
 
 @media (max-width: 1320px) {
-  .col-1,
-  .col-2 {
+  .wrap .col-1,
+  .wrap .col-2 {
     width: 100%;
   }
-  .menu-card {
+  .wrap .menu-card {
     max-width: 80vw;
     padding-left: 0;
     padding-right: 0;
   }
-  .categories {
+  .wrap .categories {
     width: 100%;
   }
 }

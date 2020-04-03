@@ -12,10 +12,12 @@
     width: 100%;
 
     input {
+      @extend .form-control;
       height: 30px;
     }
 
     & > div:not(.modal) {
+      @extend .form-group;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
@@ -42,6 +44,10 @@
     .time {
       flex-direction: column;
       max-width: 50%;
+
+      span {
+        margin-bottom: 8px;
+      }
 
       label {
         margin-right: 5px;
